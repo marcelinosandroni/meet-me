@@ -26,9 +26,9 @@
 - [ ] Embed widget para sites externos (iframe)
 
 ### UX/UI
-- [ ] Modo escuro
+- [x] Modo escuro ✅ (2026-09-24 — toggle no header, persistido)
 - [ ] Animações de entrada nos slots
-- [ ] Confetti na confirmação
+- [x] Confetti na confirmação ✅ (2026-09-24 — canvas-confetti na tela de sucesso)
 - [ ] Preview mobile no admin
 - [ ] Drag & drop para reordenar tipos de reunião
 

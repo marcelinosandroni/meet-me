@@ -9,38 +9,19 @@
 ---
 
 ## 📊 Status Geral
-- **Fase Atual:** 1 (Setup & Base UI)
-- **Progresso:** 0/18 tasks
+- **Fase Atual:** 4 (Integrações — pendente de credenciais Google/Email)
+- **Progresso:** 16/23 tasks concluídas · Próxima tarefa pendente: TASK-4.1
 
 ---
 
-## Fase 1: Setup & Base UI (Fundação)
-> Objetivo: Estrutura do projeto, design system base, e navegação funcionando.
+## Fase 1: Setup & Base UI (Fundação) ✅ CONCLUÍDA E ARQUIVADA
+> Ver resumo em specs/history/phases/phase-1-finished.md
 
-- [ ] - [TASK-1.1: Setup Tailwind + Design Tokens](./specs/tasks/PHASE-1/TASK-1.1.md)
-- [ ] - [TASK-1.2: Layout Base (Header + Footer)](./specs/tasks/PHASE-1/TASK-1.2.md)
-- [ ] - [TASK-1.3: Componentes UI Base (Button, Input, Card)](./specs/tasks/PHASE-1/TASK-1.3.md)
-- [ ] - [TASK-1.4: Router Setup (React Router)](./specs/tasks/PHASE-1/TASK-1.4.md)
-- [ ] - [TASK-1.5: Zustand Store Base (config do host)](./specs/tasks/PHASE-1/TASK-1.5.md)
+## Fase 2: Página Pública de Agendamento (Core) ✅ CONCLUÍDA E ARQUIVADA
+> Ver resumo em specs/history/phases/phase-2-finished.md
 
-## Fase 2: Página Pública de Agendamento (Core)
-> Objetivo: O link público onde recrutadores/guests agendam reuniões.
-
-- [ ] - [TASK-2.1: Página de Seleção de Tipo de Reunião](./specs/tasks/PHASE-2/TASK-2.1.md)
-- [ ] - [TASK-2.2: Componente Calendário Interativo](./specs/tasks/PHASE-2/TASK-2.2.md)
-- [ ] - [TASK-2.3: Seleção de Horários (Slots)](./specs/tasks/PHASE-2/TASK-2.3.md)
-- [ ] - [TASK-2.4: Formulário de Dados do Guest](./specs/tasks/PHASE-2/TASK-2.4.md)
-- [ ] - [TASK-2.5: Tela de Confirmação](./specs/tasks/PHASE-2/TASK-2.5.md)
-- [ ] - [TASK-2.6: Lógica de Disponibilidade (slots por config)](./specs/tasks/PHASE-2/TASK-2.6.md)
-
-## Fase 3: Painel Admin (Configuração do Host)
-> Objetivo: Onde o dono configura tudo (perfil, horários, tipos de reunião).
-
-- [ ] - [TASK-3.1: Página de Perfil do Host (nome, foto, bio)](./specs/tasks/PHASE-3/TASK-3.1.md)
-- [ ] - [TASK-3.2: CRUD de Tipos de Reunião](./specs/tasks/PHASE-3/TASK-3.2.md)
-- [ ] - [TASK-3.3: Configuração de Horários Disponíveis](./specs/tasks/PHASE-3/TASK-3.3.md)
-- [ ] - [TASK-3.4: Configuração de Aparência (tema, cor)](./specs/tasks/PHASE-3/TASK-3.4.md)
-- [ ] - [TASK-3.5: Preview da Página Pública](./specs/tasks/PHASE-3/TASK-3.5.md)
+## Fase 3: Painel Admin (Configuração do Host) ✅ CONCLUÍDA E ARQUIVADA
+> Ver resumo em specs/history/phases/phase-3-finished.md
 
 ## Fase 4: Integrações (Google Calendar + Email)
 > Objetivo: Conectar com Google Calendar e enviar emails de confirmação.
