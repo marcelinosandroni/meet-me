@@ -36,3 +36,8 @@ Quando todas as tarefas de uma Fase no PLAN.md possuírem um `[x]`:
 - O link público é compartilhável (ex: `meulink.com/marcelino`).
 - Integração com Google Calendar API é obrigatória.
 - Confirmação por email é obrigatória.
+
+## 5. Proteção do .gitignore
+
+- NUNCA remova nem edite o arquivo `.gitignore` a menos que seja estritamente necessário.
+- Se for necessário alterá-lo, apenas ADICIONE novos itens; nunca remova itens existentes.

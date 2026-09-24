@@ -6,13 +6,13 @@
 
 ---
 
-## Fase 1: MVP Funcional (Sem Backend Real)
-- [ ] Página pública de agendamento funcionando com dados mock
-- [ ] Calendário interativo com seleção de slots
-- [ ] Painel admin para configurar horários e tipos de reunião
-- [ ] Formulário de agendamento com validação
-- [ ] Tela de confirmação pós-agendamento
-- [ ] Link público compartilhável (ex: `/schedule/marcelino`)
+## Fase 1: MVP Funcional (Sem Backend Real) ✅ CONCLUÍDA — 2026-09-24
+- [x] Página pública de agendamento funcionando com dados mock
+- [x] Calendário interativo com seleção de slots
+- [x] Painel admin para configurar horários e tipos de reunião
+- [x] Formulário de agendamento com validação
+- [x] Tela de confirmação pós-agendamento
+- [x] Link público compartilhável (ex: `/schedule/marcelino`)
 
 ## Fase 2: Integração Google Calendar
 - [ ] OAuth2 com Google (login do host)
