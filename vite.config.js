@@ -11,5 +11,10 @@ export default defineConfig({
     hmr: {
       port: 3000,
     },
+    // Em dev, encaminha /api para o mock das serverless functions (npm run dev:api).
+    // Em produção as rotas /api são servidas pela Vercel (api/*.ts).
+    proxy: {
+      "/api": "http://localhost:8787",
+    },
   },
 });

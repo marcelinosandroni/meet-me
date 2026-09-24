@@ -1,8 +1,11 @@
-import { MockSchedulingService, type ISchedulingService } from '../lib/schedulingService';
+import { MockSchedulingService, RealApiSchedulingService, type ISchedulingService } from '../lib/schedulingService';
 
-/** Container de Injeção de Dependência (ver REACT.md) */
+const useRealApi = import.meta.env.VITE_API_MODE === 'real';
+
 export const container = {
-  schedulingService: new MockSchedulingService() as ISchedulingService,
+  schedulingService: (useRealApi ? new RealApiSchedulingService() : new MockSchedulingService()) as ISchedulingService,
 };
 
-export type ContainerKey = keyof typeof container;
+export type Container = typeof container;
+
+export type ContainerKey = keyof Container;

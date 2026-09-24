@@ -1,14 +1,13 @@
 {
-  "name": "sandbox-workspace",
+  "name": "meetme",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "typecheck": "tsc --noEmit",
-    "docs": "vite --root docs/planning",
-    "docs:build": "vite build --root docs/planning",
-    "docs:preview": "vite preview --root docs/planning"
+    "dev:api": "node api/dev-server.mjs",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.1.0",
@@ -29,9 +28,11 @@
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.7",
     "@types/canvas-confetti": "^1.6.4",
+    "@types/node": "^26.6.2",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "@types/uuid": "^9.0.7",
+    "@vercel/node": "^14.0.0",
     "@vitejs/plugin-react": "^4.3.4",
     "tailwindcss": "^4.1.7",
     "typescript": "^5.7.0",

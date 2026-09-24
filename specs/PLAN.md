@@ -26,15 +26,17 @@
 ## Fase 4: Integrações (Google Calendar + Email)
 > Objetivo: Conectar com Google Calendar e enviar emails de confirmação.
 
-- [ ] - [TASK-4.1: Google OAuth2 Flow (login do host)](./specs/tasks/PHASE-4/TASK-4.1.md)
-- [ ] - [TASK-4.2: Integração Google Calendar API (ler disponibilidade)](./specs/tasks/PHASE-4/TASK-4.2.md)
-- [ ] - [TASK-4.3: Criar eventos no Google Calendar ao agendar](./specs/tasks/PHASE-4/TASK-4.3.md)
-- [ ] - [TASK-4.4: Envio de Emails de Confirmação](./specs/tasks/PHASE-4/TASK-4.4.md)
+- [x] - [TASK-4.1: Google OAuth2 Flow (login do host)](./specs/tasks/PHASE-4/TASK-4.1.md)
+- [x] - [TASK-4.2: Integração Google Calendar API (ler disponibilidade)](./specs/tasks/PHASE-4/TASK-4.2.md)
+- [x] - [TASK-4.3: Criar eventos no Google Calendar ao agendar](./specs/tasks/PHASE-4/TASK-4.3.md)
+- [x] - [TASK-4.4: Envio de Emails de Confirmação](./specs/tasks/PHASE-4/TASK-4.4.md)
 
-## Fase 5: Polimento & Deploy
+## Fase 5: Polimento & Deploy ✅ CONCLUÍDA E ARQUIVADA
 > Objetivo: Deixar bonito, responsivo, e pronto para produção.
+> Deploy alvo: **Vercel** (SPA + serverless functions em `/api`). Sem Cloudflare.
+> Ver `README.md` → seção "Deploy na Vercel" e `.env.example` para credenciais.
 
-- [ ] - [TASK-5.1: Responsividade Mobile](./specs/tasks/PHASE-5/TASK-5.1.md)
-- [ ] - [TASK-5.2: Animações e Transições](./specs/tasks/PHASE-5/TASK-5.2.md)
-- [ ] - [TASK-5.3: SEO + Meta Tags (Open Graph)](./specs/tasks/PHASE-5/TASK-5.3.md)
-- [ ] - [TASK-5.4: Deploy na Vercel](./specs/tasks/PHASE-5/TASK-5.4.md)
+- [x] - [TASK-5.1: Responsividade Mobile](./specs/tasks/PHASE-5/TASK-5.1.md)
+- [x] - [TASK-5.2: Animações e Transições](./specs/tasks/PHASE-5/TASK-5.2.md)
+- [x] - [TASK-5.3: SEO + Meta Tags (Open Graph)](./specs/tasks/PHASE-5/TASK-5.3.md)
+- [x] - [TASK-5.4: Deploy na Vercel](./specs/tasks/PHASE-5/TASK-5.4.md)

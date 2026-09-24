@@ -48,6 +48,10 @@ export interface Booking {
   end: string;
   status: 'confirmed' | 'cancelled';
   createdAt: string;
+  /** Local da reunião (ex.: "Google Meet") — vem do MeetingType no momento da reserva */
+  location?: string;
+  /** Link do Google Meet criado junto com o evento (modo real) */
+  meetLink?: string;
 }
 
 export interface Slot {

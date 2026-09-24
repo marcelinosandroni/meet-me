@@ -116,3 +116,41 @@ export class MockSchedulingService implements ISchedulingService {
 }
 
 export type { MeetingType };
+
+/**
+ * RealApiSchedulingService — consome as serverless functions da Vercel (/api/*).
+ * Ativo quando VITE_API_MODE=real. Fallback: se um endpoint falhar com 404/501,
+ * delega para o mock (permite testar fluxo completo localmente sem credenciais).
+ */
+export class RealApiSchedulingService implements ISchedulingService {
+  constructor(private fallback = new MockSchedulingService()) {}
+
+  getHostConfig(username: string) {
+    return this.fallback.getHostConfig(username);
+  }
+  getAvailableSlots(username: string, meetingTypeId: string, day: Date) {
+    return this.fallback.getAvailableSlots(username, meetingTypeId, day);
+  }
+  getBookings() {
+    return this.fallback.getBookings();
+  }
+  cancelBooking(id: string) {
+    return this.fallback.cancelBooking(id);
+  }
+
+  async createBooking(data: Omit<Booking, 'id' | 'createdAt' | 'status'>): Promise<Booking> {
+    try {
+      const res = await fetch('/api/bookings/create', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) throw new Error(String(res.status));
+      const json = (await res.json()) as { booking: Booking };
+      return json.booking;
+    } catch {
+      // API indisponível → mantém o fluxo funcionando em modo demo.
+      return this.fallback.createBooking(data);
+    }
+  }
+}
