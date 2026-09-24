@@ -6,9 +6,9 @@
     "dev": "vite",
     "build": "vite build",
     "typecheck": "tsc --noEmit",
-    "docs": "vite --root docs/planning",
-    "docs:build": "vite build --root docs/planning",
-    "docs:preview": "vite preview --root docs/planning"
+    "docs": "vite --config docs/planning/vite.config.ts",
+    "docs:build": "vite build --config docs/planning/vite.config.ts",
+    "docs:preview": "vite preview --config docs/planning/vite.config.ts"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.1.0",
