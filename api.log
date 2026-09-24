@@ -1,0 +1,6 @@
+nohup: ignoring input
+
+> dev:api
+> node api/dev-server.mjs
+
+[dev:api] Mock das serverless functions rodando em http://localhost:8787/api

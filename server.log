@@ -1,0 +1,11 @@
+nohup: ignoring input
+
+> dev
+> vite
+
+
+  VITE v6.4.3  ready in 588 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://21.0.4.161:3000/
+6:44:25 AM [vite] (client) page reload index.html
